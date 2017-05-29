@@ -1,0 +1,26 @@
+{
+  "name": "Link-ico",
+  "version": "0.0.1",
+  "description": "Link ICO",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RFVenter/Link-ico"
+  },
+  "author": "Riaan Francois Venter <msg@rfv.io>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "bignumber.js": "^4.0.2",
+    "ethereumjs-abi": "^0.6.4",
+    "ethereumjs-testrpc": "^3.0.5",
+    "ethereumjs-util": "^5.1.1"
+  },
+  "presets": [
+    "latest",
+    "stage-3"
+  ]
+}
