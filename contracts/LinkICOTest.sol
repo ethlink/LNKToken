@@ -70,5 +70,13 @@ contract LinkICOTest is Ownable, Destructible, Drainable {
         token.transferFrom(owner, msg.sender, tokenAmount);     // allocate thos tokens
         NewTokenPurchase(msg.sender, msg.value, tokenAmount);   // send a public message out on the network
     }
+
+    /// @notice Used to set the price of one Link Token
+    function setTokenPrice(uint _price) 
+        onlyOwner
+    {
+
+        price = _price;
+    }
 }
 
