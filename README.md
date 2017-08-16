@@ -1,4 +1,4 @@
-# Link Platform Token important Information
+# Link Platform Token Important Information
 
 Symbol: LNK  
 Name: Link Platform  
