@@ -42,6 +42,20 @@ contract ERC20Token {
     /// @param _spender The address of the account able to transfer the tokens
     /// @return Amount of remaining tokens allowed to spent
     function allowance(address _owner, address _spender) constant returns (uint256 remaining);
+    }
+    contract UpgradeAgent {
+
+  uint public originalSupply;
+
+  /** Interface marker */
+  function isUpgradeAgent() public constant returns (bool) {
+    return true;
+  }
+
+  function upgradeFrom(address _from, uint256 _value) public;
+
+}
+
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
